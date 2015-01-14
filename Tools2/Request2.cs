@@ -15,6 +15,7 @@ namespace Tools
     /// </summary>
     public class Request2 {
     
+
         /// <summary>
         /// 接收传值
         /// </summary>
