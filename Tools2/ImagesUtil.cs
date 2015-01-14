@@ -21,7 +21,6 @@ namespace Tools
             ResourceImage = Image.FromFile(ImageFileName);
             ErrMessage = "";
         }
-
         public bool ThumbnailCallback()
         {
             return false;
