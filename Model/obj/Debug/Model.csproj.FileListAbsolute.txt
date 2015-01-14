@@ -1,0 +1,4 @@
+F:\c#\家教项目\EWeb\Model\bin\Debug\Model.dll
+F:\c#\家教项目\EWeb\Model\bin\Debug\Model.pdb
+F:\c#\家教项目\EWeb\Model\obj\Debug\Model.dll
+F:\c#\家教项目\EWeb\Model\obj\Debug\Model.pdb

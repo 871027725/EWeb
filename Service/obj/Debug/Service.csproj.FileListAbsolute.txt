@@ -1,0 +1,13 @@
+F:\c#\家教项目\EWeb\Service\bin\Debug\Service.exe
+F:\c#\家教项目\EWeb\Service\bin\Debug\Service.pdb
+F:\c#\家教项目\EWeb\Service\bin\Debug\log4net.dll
+F:\c#\家教项目\EWeb\Service\bin\Debug\Model.dll
+F:\c#\家教项目\EWeb\Service\bin\Debug\Tools.dll
+F:\c#\家教项目\EWeb\Service\bin\Debug\Memcached.ClientLibrary.dll
+F:\c#\家教项目\EWeb\Service\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\c#\家教项目\EWeb\Service\bin\Debug\Model.pdb
+F:\c#\家教项目\EWeb\Service\bin\Debug\Tools.pdb
+F:\c#\家教项目\EWeb\Service\bin\Debug\Memcached.ClientLibrary.pdb
+F:\c#\家教项目\EWeb\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+F:\c#\家教项目\EWeb\Service\obj\Debug\Service.exe
+F:\c#\家教项目\EWeb\Service\obj\Debug\Service.pdb

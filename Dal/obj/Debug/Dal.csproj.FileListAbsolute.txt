@@ -1,0 +1,9 @@
+F:\c#\家教项目\EWeb\Dal\bin\Debug\Dal.dll
+F:\c#\家教项目\EWeb\Dal\bin\Debug\Dal.pdb
+F:\c#\家教项目\EWeb\Dal\bin\Debug\DBUtils.dll
+F:\c#\家教项目\EWeb\Dal\bin\Debug\Model.dll
+F:\c#\家教项目\EWeb\Dal\bin\Debug\DBUtils.pdb
+F:\c#\家教项目\EWeb\Dal\bin\Debug\Model.pdb
+F:\c#\家教项目\EWeb\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+F:\c#\家教项目\EWeb\Dal\obj\Debug\Dal.dll
+F:\c#\家教项目\EWeb\Dal\obj\Debug\Dal.pdb

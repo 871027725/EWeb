@@ -1,0 +1,17 @@
+﻿/* CSS Document */
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, 
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+ul,li { list-style:none;}
+a{color:#656565; text-decoration:none; CURSOR: pointer; outline: none;star:expression(this.onFocus=this.blur()); }
+a:hover{color:#FF6633; text-decoration:none; }
+img{border:0px;}
+/*body{font-size:12px;   color:#656565; background:#f5f5f5 url(../images/sage_bg.jpg) repeat-x;}*/
+body{font-size:12px;   color:#656565; background:#ffffff url(../images/sage_bg.jpg) repeat-x;}
+.clear{ clear:both;}
+
+
+/*----------------------------------------------*/
+.fl{ float:left;}
+.fr{ float:right;}
+.texts{ width:190px; padding-left:3px; height:28px; background:url(../image/Register_bg.jpg) repeat-x; border:1px solid #cbcbcb; float:left; line-height:28px;}

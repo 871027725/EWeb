@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B0AC1AD-EA37-4ADF-8BD5-6FDE7E5096BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tools</RootNamespace>
+    <AssemblyName>Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Commons">
+      <HintPath>..\EWeb\Lib\Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\EWeb\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\..\Sagetta\Sagetta\Sagetta\Lib\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EWeb\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Memcached.ClientLibrary">
+      <HintPath>..\EWeb\Lib\Memcached.ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheHelper\CacheBootStrap.cs" />
+    <Compile Include="CacheHelper\CacheManageFactory.cs" />
+    <Compile Include="Common\ConfigUtil.cs" />
+    <Compile Include="Common\FunUtil.cs" />
+    <Compile Include="CacheHelper\RCache\ErrorMonitor\IErrorHandle.cs" />
+    <Compile Include="CacheHelper\RCache\ErrorMonitor\LogMemErrorHandle.cs" />
+    <Compile Include="CacheHelper\ICacheManage.cs" />
+    <Compile Include="CacheHelper\RCache\ErrorMonitor\LogRedisErrorHandle.cs" />
+    <Compile Include="CacheHelper\RCache\MemcacheManage\MemcacheCacheManage.cs" />
+    <Compile Include="CacheHelper\RCache\MemcacheManage\MemcacheServer.cs" />
+    <Compile Include="CacheHelper\RCache\RedisManage\RedisCacheManage.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\Machine.cs" />
+    <Compile Include="Common\ServiceProtocl.cs" />
+    <Compile Include="Communications\Http\HttpClient.cs" />
+    <Compile Include="Communications\Http\HttpClinetFactory.cs" />
+    <Compile Include="Communications\Tcp\IListener.cs" />
+    <Compile Include="Communications\Tcp\IO\TcpIoListener.cs" />
+    <Compile Include="Communications\Tcp\NIO\TcpNioListener.cs" />
+    <Compile Include="Communications\Tcp\ProtoclManage.cs" />
+    <Compile Include="ImagesUtil.cs" />
+    <Compile Include="LogHelper\ILogger.cs" />
+    <Compile Include="LogHelper\LoggerImp.cs" />
+    <Compile Include="LogHelper\LoggerManage.cs" />
+    <Compile Include="Msg.cs" />
+    <Compile Include="MyJScript.cs" />
+    <Compile Include="ObjectExtensions.cs" />
+    <Compile Include="Pager.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request2.cs" />
+    <Compile Include="StringDispose.cs" />
+    <Compile Include="Upload.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CacheHelper\WebCache\" />
+    <Folder Include="Communications\Udp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
