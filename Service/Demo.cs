@@ -11,6 +11,7 @@ namespace Service
             CacheManageFactory cm = CacheManageFactory.getFactory();
             ICacheManage cache = cm.getCacheManage("memcache");
 
+
             for (int i = 0; i < 1000; i++)
             {
                 if (cache.Set("a" + i, "aa" + i))
